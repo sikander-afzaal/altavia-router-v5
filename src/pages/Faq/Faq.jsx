@@ -1,6 +1,6 @@
 import "./Faq.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+// import "@splidejs/react-splide/css";
 import FaqTab from "../../components/FaqTab/FaqTab";
 
 const Faq = () => {
