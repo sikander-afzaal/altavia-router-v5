@@ -1,0 +1,159 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-inline: 20px;
+  max-width: var(--max-width);
+  margin: 40px auto;
+  margin-top: 124px;
+  position: relative;
+}
+.about .location {
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0px;
+}
+.bg-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  max-height: 858px;
+}
+.desc-about {
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 9px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 70px;
+}
+.desc-about p,
+.grey-div ul li {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  line-height: 28px;
+}
+.grey-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-direction: column;
+  padding: 20px;
+  background: #4a4a4a;
+  border-radius: 9px;
+  width: 100%;
+}
+.grey-div ul {
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.eco-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.eco-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding-right: 30px;
+  border-right: 1px solid #474747;
+}
+.icon-div img {
+  width: 51px;
+  height: 51px;
+}
+.icon-div h2 {
+  font-weight: 500;
+  font-size: 18px;
+  width: 136px;
+  color: white;
+}
+.eco-div > p {
+  padding-left: 30px;
+}
+.about-img {
+  width: 100%;
+  object-fit: contain;
+  align-self: center;
+  margin-top: 30px;
+}
+.desc-about > button {
+  border-radius: 9px;
+  background-color: var(--purple);
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  border: none;
+  align-self: center;
+}
+@media screen and (max-width: 1123px) {
+  .eco-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .desc-about {
+    padding: 50px 50px;
+  }
+  .eco-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  .icon-div {
+    gap: 20px;
+    border: none;
+    padding: 0px;
+  }
+  .eco-div > p {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .desc-about {
+    padding: 50px 20px;
+  }
+  .desc-about p,
+  .grey-div ul li {
+    font-size: 18px;
+  }
+  .desc-about > button {
+    width: 100%;
+  }
+}

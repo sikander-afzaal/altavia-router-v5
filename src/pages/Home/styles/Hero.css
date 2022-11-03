@@ -1,0 +1,115 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  height: 500px;
+  overflow: hidden;
+  max-height: 500px;
+  gap: 100px;
+  margin-top: 104px;
+  position: relative;
+}
+.hero .img-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+.hero img {
+  object-fit: cover;
+}
+.right-hero {
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.right-hero .stocks {
+  width: 105px;
+  height: 41px;
+  background-color: white;
+  border-radius: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 700;
+}
+.right-hero h1 {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 82.953px;
+}
+.right-hero p {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 45px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 322px;
+}
+@media screen and (max-width: 1209px) {
+  .hero .img-wrapper {
+    position: absolute;
+    left: -200px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+  }
+  .right-hero {
+    grid-column: 2/3;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 917px) {
+  .hero .img-wrapper {
+    left: -330px;
+  }
+  .hero {
+    grid-template-columns: 240px 1fr;
+  }
+  .right-hero h1 {
+    font-size: 40.0234px;
+    line-height: 51px;
+  }
+  .right-hero p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .hero .img-wrapper {
+    left: -460px;
+  }
+  .hero {
+    grid-template-columns: 100px 1fr;
+  }
+  .right-hero .stocks {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 472px) {
+  .hero .img-wrapper {
+    left: -460px;
+  }
+  .hero {
+    grid-template-columns: 30px 1fr;
+  }
+  .right-hero {
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .right-hero h1 {
+    font-size: 35px;
+  }
+  .right-hero p {
+    margin-top: 0px;
+  }
+}

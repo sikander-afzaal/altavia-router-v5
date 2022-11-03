@@ -1,0 +1,305 @@
+.admin-project-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+.admin-project-box:hover,
+.active-admin-project-box {
+  background-color: var(--purple);
+}
+.admin-project-box > .flex {
+  width: 100%;
+  justify-content: space-between;
+}
+.admin-project-box > .flex h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.admin-project-box > .flex h2 img {
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background: linear-gradient(89.4deg, #f8fae7 0.46%, #ebfbfc 91.52%);
+}
+.admin-project-box > svg {
+  background-color: var(--purple);
+  color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box !important;
+  padding: 5px;
+}
+.admin-project-box:hover svg,
+.active-admin-project-box svg {
+  background-color: var(--black);
+}
+.detail-header > .purple-btn {
+  width: 101px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--purple);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.detail-header > .purple-btn svg {
+  margin-right: 10px;
+}
+.detail-header > .purple-btn:hover {
+  background-color: transparent;
+  border-color: var(--purple);
+}
+.projects-admin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.admin-row {
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+.active-row {
+  background-color: #262626;
+  width: calc(100% - 20px);
+  border-top: none;
+  border-radius: 9px;
+  margin-bottom: 10px;
+}
+.admin-row-btn {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  column-gap: 40px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.admin-row-btn .flex:first-of-type {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.admin-row-btn .flex:first-of-type img {
+  width: 48px;
+  background-color: var(--purple);
+  border-radius: 8px;
+  height: 48px;
+  padding: 6px;
+}
+.admin-row-btn .flex:first-of-type h2 {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+.admin-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-col h2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray);
+}
+.admin-col p {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.admin-row-btn .flex:last-of-type {
+  gap: 20px;
+}
+.admin-row-btn .flex:last-of-type img,
+.admin-row-btn .flex:last-of-type svg {
+  color: white;
+  width: 37px;
+  height: 37px;
+  background: #262626;
+  border-radius: 6px;
+  box-sizing: border-box !important;
+  padding: 8px;
+  cursor: pointer;
+}
+.admin-row-btn .flex:last-of-type svg {
+  padding: 10px;
+}
+.expanded-admin-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.expand-active {
+  max-height: 2000px;
+  padding-top: 30px;
+}
+.expanded-admin-row > .flex {
+  justify-content: flex-start;
+  width: 100%;
+  gap: 30px;
+}
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.links p {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 10px;
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 14px;
+}
+.links p a {
+  color: #00a3ff;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 11px;
+}
+.expanded-admin-row .right-expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 283px;
+  width: 100%;
+  background: var(--black);
+  border-radius: 9px;
+  height: 122px;
+  gap: 20px;
+}
+.right-expand img {
+  padding: 8px;
+  background-color: var(--light-black);
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+}
+.expanded-admin-row .btn-div {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.expanded-admin-row .btn-div button {
+  height: 36px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.expanded-admin-row .btn-div .purple-btn:hover {
+  background-color: transparent;
+  border-color: var(--purple);
+}
+.expanded-admin-row .btn-div .white-border:hover {
+  color: black;
+}
+.expanded-admin-row .btn-div .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.mob-col {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .admin-header {
+    flex-direction: row;
+  }
+  .expanded-admin-row > .flex {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .expanded-admin-row .right-expand {
+    width: 100%;
+    max-width: none;
+  }
+  .btn-div {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 632px) {
+  .admin-row-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .admin-col {
+    display: none;
+  }
+  .mob-col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .mob-col .admin-col {
+    display: flex;
+  }
+}
+@media screen and (max-width: 506px) {
+  .links p {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .links p a {
+    grid-row: 2/3;
+  }
+  .links p img {
+    grid-row: 2/3;
+  }
+  .btn-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-div button {
+    padding: 0px;
+    width: 100%;
+  }
+}

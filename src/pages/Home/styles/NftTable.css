@@ -1,0 +1,122 @@
+.nftTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.table-header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: #1e1e1e;
+  border: 1px solid #555555;
+  border-radius: 9px;
+  height: 54px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+.table-header h3 {
+  color: var(--gray);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  user-select: none;
+  cursor: pointer;
+  width: 100%;
+}
+.table-header h3 .bottom-style {
+  color: white;
+  position: relative;
+  padding: 9px 10px;
+  line-height: 1;
+  margin: 0px;
+  padding-bottom: 9px;
+  border-radius: 6px;
+  background-color: var(--purple);
+}
+.table-header h3 .bottom-style::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 23px);
+  left: 0;
+  width: 100%;
+  background-color: var(--purple);
+  border-radius: 25px;
+  height: 16px;
+  z-index: -1;
+}
+.table-header h3 .bottom-style::after {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--purple);
+}
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.view img {
+  filter: contrast(0);
+  cursor: pointer;
+}
+.view .active {
+  filter: brightness(10);
+}
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  background-color: var(--light-black);
+  border-radius: 9px;
+}
+.load-more-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  color: white;
+  gap: 20px;
+  border-top: 1px solid #4a4a4a;
+  cursor: pointer;
+}
+.load-more-div p {
+  font-weight: 700;
+  user-select: none;
+  font-size: 14px;
+}
+.grid-view {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+}
+.table .stake-row-wrapper:nth-last-of-type(2) {
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-view {
+    justify-content: space-around;
+  }
+}

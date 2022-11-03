@@ -1,0 +1,67 @@
+.main-connect {
+  background-image: url("./bg2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px;
+}
+.connect {
+  align-items: flex-start;
+}
+.connect-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  border-radius: 9px;
+  padding: 30px;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--light-black);
+  align-self: center;
+  margin-top: 40px;
+}
+.connect-row {
+  max-width: 359px;
+  width: 100%;
+  height: 87px;
+  border-radius: 100vh;
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  padding-left: 10px;
+}
+.connect-row:hover {
+  background-color: #4627c1;
+  cursor: pointer;
+}
+.connect-row h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+.connect-box a {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.connect-box a svg {
+  margin-right: 10px;
+}
+@media screen and (max-width: 500px) {
+  .connect-row h2 {
+    font-size: 18px;
+  }
+}

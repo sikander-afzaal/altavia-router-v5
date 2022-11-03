@@ -1,0 +1,211 @@
+.add-nft-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--black);
+  z-index: 100;
+  width: 95%;
+  max-width: 770px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+  max-height: 80vh;
+  height: 100%;
+  overflow-y: scroll;
+}
+.add-nft-modal h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  align-self: center;
+}
+.add-nft-modal .input-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+.add-nft-modal .input-div h3,
+.color-selector p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--gray);
+}
+.add-nft-modal .flex {
+  width: 100%;
+  gap: 10px;
+}
+.input-div .input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.input-div input,
+.input-div textarea {
+  border: 1px solid #505050;
+  border-radius: 13px;
+  color: #ababab;
+  height: 48px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: transparent;
+  padding-left: 10px;
+}
+.color-selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.colors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.colors div {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 50%;
+}
+.colors .active-color:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: var(--light-black);
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+}
+.colors div:nth-of-type(1) {
+  background-color: #fd7972;
+}
+.colors div:nth-of-type(2) {
+  background-color: #ff965d;
+}
+.colors div:nth-of-type(3) {
+  background-color: #ffd240;
+}
+.colors div:nth-of-type(4) {
+  background-color: #304ffd;
+}
+.colors div:nth-of-type(5) {
+  background-color: #22cce2;
+}
+.colors div:nth-of-type(6) {
+  background-color: #49c96d;
+}
+.colors div:nth-of-type(7) {
+  background-color: #aee553;
+}
+.colors div:nth-of-type(8) {
+  background-color: #af30fd;
+}
+.colors div:nth-of-type(9) {
+  background-color: #fd72de;
+}
+.colors div:nth-of-type(10) {
+  background-color: #e8e9eb;
+}
+.input-div textarea {
+  resize: none;
+  height: 116px;
+  padding-top: 10px;
+}
+.upload-image {
+  width: 100%;
+}
+.upload-image input {
+  display: none;
+}
+.upload-image label {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ebf4f7;
+  border: 1px dashed #326789;
+  border-radius: 13px;
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.upload-image label svg {
+  font-size: 20px;
+}
+.upload-image label p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #242427;
+}
+.upload-image label p span {
+  color: #228d9b;
+  margin-left: 5px;
+}
+.add-nft-modal .btn-div {
+  align-self: flex-end;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-nft-modal .btn-div button {
+  height: 36px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.add-nft-modal .btn-div .purple-btn:hover {
+  background-color: transparent;
+  border-color: var(--purple);
+}
+.add-nft-modal .btn-div .white-border:hover {
+  color: black;
+}
+.add-nft-modal > svg {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box !important;
+  padding: 5px;
+  color: var(--light-black);
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .input-row {
+    flex-direction: column;
+  }
+  .add-nft-modal .flex {
+    flex-direction: column;
+  }
+  .add-nft-modal {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+.waitModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  background: var(--black);
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  width: 95%;
+  min-height: 395px;
+  gap: 20px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(43, 43, 43, 0.78);
+  z-index: 7;
+  width: 100%;
+  height: 100vh;
+}
+.waitModal img {
+  width: 110px;
+  height: 110px;
+}
+.waitModal h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 32px;
+}
+.waitModal p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 24px;
+  max-width: 470px;
+  width: 95%;
+}
+.waitModal .btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+  max-width: 400px;
+}
+.waitModal .btn-div button {
+  width: 100%;
+  height: 46px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+.waitModal .btn-div .white-border:hover {
+  color: black;
+}
+.waitModal .btn-div .purple-btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: var(--purple);
+}
+@media screen and (max-width: 500px) {
+  .waitModal .btn-div {
+    flex-direction: column;
+  }
+}

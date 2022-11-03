@@ -1,0 +1,238 @@
+.stake-row-wrapper {
+  border-bottom: 1px solid #4a4a4a;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.stakeRow {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  transition: all 0.6s ease-in-out;
+}
+.active-stake-row {
+  background-color: #262626;
+  border-radius: 9px;
+}
+.top-stake {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.top-stake .flex {
+  gap: 10px;
+}
+.top-stake .flex img {
+  background-color: #262626;
+  width: 48px;
+  height: 46px;
+  padding: 10px;
+}
+.top-stake .flex > div h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+.top-stake .flex > div p {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.stake-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+}
+.stake-col h5 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray);
+}
+.stake-col p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.stake-col p span {
+  color: var(--gray);
+}
+.top-stake > svg {
+  color: #9d9d9d;
+  background-color: var(--black);
+  border-radius: 6px;
+  height: 37px;
+  width: 37px;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box !important;
+}
+.bottom-stake {
+  display: grid;
+  grid-template-columns: 1fr 283px;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+  width: 100%;
+  padding-left: 60px;
+  max-height: 0px;
+  padding-block: 0px;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+}
+.openStakeRow {
+  padding-block: 20px;
+  max-height: 1000px;
+}
+.border-top-bot {
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+  width: 100%;
+  padding-block: 10px;
+}
+.left-bottom-stake {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.left-bottom-stake .flex {
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.left-bottom-stake .flex p {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray);
+}
+.left-bottom-stake .flex h6 {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+.right-bottom-stake {
+  max-width: 283px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  border-radius: 9px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-bottom-stake p {
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.stake-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stake-btns button {
+  max-width: 200px;
+  min-width: 119px;
+}
+.stake-btns button,
+.right-bottom-stake .purple-btn {
+  width: 100%;
+  height: 46px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+.purple-btn {
+  border: 1px solid transparent;
+  background-color: var(--purple);
+}
+.purple-btn:hover {
+  background-color: transparent;
+  border-color: var(--purple);
+}
+.white-border {
+  border: 1px solid white;
+  background-color: transparent;
+}
+.white-border:hover {
+  background-color: white;
+  color: black;
+}
+.stake-btns .disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+.mob-stake {
+  display: none;
+}
+@media screen and (max-width: 804px) {
+  .right-bottom-stake {
+    justify-content: center;
+  }
+  .stake-btns {
+    justify-content: center;
+  }
+  .stake-btns button {
+    max-width: none;
+  }
+  .top-stake {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    place-items: center;
+  }
+  .bottom-stake {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding-left: 0px;
+  }
+  .right-bottom-stake {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .top-stake {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mob-stake {
+    display: flex;
+  }
+  .top-stake .stake-col {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+.addNew {
+  gap: 50px !important;
+}
+.addNew .input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.new-nft-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #262626;
+  border-radius: 9px;
+  gap: 10px;
+  padding: 20px 10px;
+}
+.new-nft-msg img:first-of-type {
+  align-self: flex-end;
+}
+.new-nft-msg .input-div {
+  gap: 5px !important;
+}
+.new-nft-msg .input-div label {
+  height: 48px;
+  flex-direction: row;
+}
+.speaker-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.speaker-input img {
+  display: none;
+}
+@media screen and (max-width: 663px) {
+  .new-nft-msg {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .new-nft-msg .input-div {
+    gap: 20px !important;
+  }
+  .new-nft-msg > img {
+    display: none;
+  }
+  .speaker-input img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+  }
+  .speaker-input input {
+    padding-left: 50px !important;
+  }
+  .upload-div {
+    flex-direction: row !important;
+  }
+  .upload-div label {
+    height: 90px !important;
+  }
+}

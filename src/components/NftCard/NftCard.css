@@ -1,0 +1,19 @@
+.nftCard {
+  width: 100%;
+  height: 100%;
+  max-width: 332px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.nftCard img {
+  width: 100%;
+  object-fit: contain;
+}
+.nftCard h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
