@@ -161,134 +161,134 @@ const Stake = () => {
                 </select>
               </div>
             </div>
-            <div className="poll-box">
-              <div className="poll-header">
-                <h2>Poll Sizes</h2>
-                <img src="/empty-wallet-tick.svg" alt="" />
+            {isStaked ? (
+              <div className="black-stake-box left-side-box">
+                <h2>Stake Overview</h2>
+                <div className="flex">
+                  <p>Tava to be Blocked</p>
+                  <h6>100.516</h6>
+                </div>
+                <div className="flex">
+                  <p>Start date</p>
+                  <h6>Aug 7th, 2022</h6>
+                </div>
+                <div className="flex">
+                  <p>Duration</p>
+                  <h6>30 Day</h6>
+                </div>
+                <div className="flex">
+                  <p>Total Staked</p>
+                  <h6>30,250</h6>
+                </div>
+                <div className="flex">
+                  <p>Total Minted</p>
+                  <h6>+2.92%</h6>
+                </div>
+                <div className="flex">
+                  <p>Unlock On</p>
+                  <h6>Sep 7 th, 2022 11:50</h6>
+                </div>
+                <div className="flex">
+                  <p>Contract Address</p>
+                  <h6>Lorem</h6>
+                </div>
               </div>
-              <div className="slider-div">
-                <div>
-                  <p>90 Days</p>
-                  <h2>{pollSlider1}%</h2>
+            ) : (
+              <div className="black-stake-box left-side-box">
+                <h2>Lock Overview</h2>
+                <div className="flex">
+                  <p>Tava to be Blocked</p>
+                  <h6>100.516</h6>
                 </div>
-                <div className="range-slider">
-                  <Slider
-                    onChange={(value) => {
-                      setPollSlider1(value);
-                    }}
-                    min={0}
-                    tooltip={false}
-                    max={100}
-                    value={pollSlider1}
-                  />
+                <div className="flex">
+                  <p>Start date</p>
+                  <h6>Aug 7th, 2022</h6>
                 </div>
-                <p>100.000 ERN</p>
+                <div className="flex">
+                  <p>Duration</p>
+                  <h6>30 Day</h6>
+                </div>
+                <div className="flex">
+                  <p>NFT Staked</p>
+                  <h6>3</h6>
+                </div>
+                <div className="flex">
+                  <p>Yield Boost</p>
+                  <h6>+2.92%</h6>
+                </div>
+                <div className="flex">
+                  <p>Unlock On</p>
+                  <h6>Sep 7 th, 2022 11:50</h6>
+                </div>
+                <div className="flex">
+                  <p>Expected Roi</p>
+                  <h6>$1000</h6>
+                </div>
               </div>
-              <div className="slider-div">
-                <div>
-                  <p>90 Days</p>
-                  <h2>{pollSlider2}%</h2>
-                </div>
-                <div className="range-slider">
-                  <Slider
-                    onChange={(value) => {
-                      setPollSlider2(value);
-                    }}
-                    min={0}
-                    tooltip={false}
-                    max={100}
-                    value={pollSlider2}
-                  />
-                </div>
-                <p>100.000 ERN</p>
-              </div>
-              <div className="slider-div">
-                <div>
-                  <p>90 Days</p>
-                  <h2>{pollSlider3}%</h2>
-                </div>
-                <div className="range-slider">
-                  <Slider
-                    onChange={(value) => {
-                      setPollSlider3(value);
-                    }}
-                    min={0}
-                    tooltip={false}
-                    max={100}
-                    value={pollSlider3}
-                  />
-                </div>
-                <p>100.000 ERN</p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
         <div className="right-stake-page">
-          {isStaked ? (
-            <div className="black-stake-box">
-              <h2>Stake Overview</h2>
-              <div className="flex">
-                <p>Tava to be Blocked</p>
-                <h6>100.516</h6>
-              </div>
-              <div className="flex">
-                <p>Start date</p>
-                <h6>Aug 7th, 2022</h6>
-              </div>
-              <div className="flex">
-                <p>Duration</p>
-                <h6>30 Day</h6>
-              </div>
-              <div className="flex">
-                <p>Total Staked</p>
-                <h6>30,250</h6>
-              </div>
-              <div className="flex">
-                <p>Total Minted</p>
-                <h6>+2.92%</h6>
-              </div>
-              <div className="flex">
-                <p>Unlock On</p>
-                <h6>Sep 7 th, 2022 11:50</h6>
-              </div>
-              <div className="flex">
-                <p>Contract Address</p>
-                <h6>Lorem</h6>
-              </div>
+          <div className="poll-box">
+            <div className="poll-header">
+              <h2>Poll Sizes</h2>
+              <img src="/empty-wallet-tick.svg" alt="" />
             </div>
-          ) : (
-            <div className="black-stake-box">
-              <h2>Lock Overview</h2>
-              <div className="flex">
-                <p>Tava to be Blocked</p>
-                <h6>100.516</h6>
+            <div className="slider-div">
+              <div>
+                <p>90 Days</p>
+                <h2>{pollSlider1}%</h2>
               </div>
-              <div className="flex">
-                <p>Start date</p>
-                <h6>Aug 7th, 2022</h6>
+              <div className="range-slider">
+                <Slider
+                  onChange={(value) => {
+                    setPollSlider1(value);
+                  }}
+                  min={0}
+                  tooltip={false}
+                  max={100}
+                  value={pollSlider1}
+                />
               </div>
-              <div className="flex">
-                <p>Duration</p>
-                <h6>30 Day</h6>
-              </div>
-              <div className="flex">
-                <p>NFT Staked</p>
-                <h6>3</h6>
-              </div>
-              <div className="flex">
-                <p>Yield Boost</p>
-                <h6>+2.92%</h6>
-              </div>
-              <div className="flex">
-                <p>Unlock On</p>
-                <h6>Sep 7 th, 2022 11:50</h6>
-              </div>
-              <div className="flex">
-                <p>Expected Roi</p>
-                <h6>$1000</h6>
-              </div>
+              <p>100.000 ERN</p>
             </div>
-          )}
+            <div className="slider-div">
+              <div>
+                <p>90 Days</p>
+                <h2>{pollSlider2}%</h2>
+              </div>
+              <div className="range-slider">
+                <Slider
+                  onChange={(value) => {
+                    setPollSlider2(value);
+                  }}
+                  min={0}
+                  tooltip={false}
+                  max={100}
+                  value={pollSlider2}
+                />
+              </div>
+              <p>100.000 ERN</p>
+            </div>
+            <div className="slider-div">
+              <div>
+                <p>90 Days</p>
+                <h2>{pollSlider3}%</h2>
+              </div>
+              <div className="range-slider">
+                <Slider
+                  onChange={(value) => {
+                    setPollSlider3(value);
+                  }}
+                  min={0}
+                  tooltip={false}
+                  max={100}
+                  value={pollSlider3}
+                />
+              </div>
+              <p>100.000 ERN</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
